@@ -24,13 +24,13 @@ DROP TABLE IF EXISTS `pedidos`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pedidos` (
   `idpedidos` int NOT NULL,
-  `nome clientes` varchar(150) NOT NULL,
+  `nomeClientes` varchar(150) NOT NULL,
   `endereco` varchar(250) NOT NULL,
   `telefone` varchar(45) NOT NULL,
-  `nome produto` varchar(150) NOT NULL,
-  `valor unitario` decimal(8,2) NOT NULL,
+  `nomeProduto` varchar(150) NOT NULL,
+  `valorUnitario` decimal(8,2) NOT NULL,
   `quantidade` int NOT NULL,
-  `valor total` decimal(10,2) NOT NULL,
+  `valorTotal` decimal(10,2) NOT NULL,
   PRIMARY KEY (`idpedidos`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela de pedidos contendo: nome do cliente, endereço, telefone, nome do produto, valor unitário, quantidade e valor total.';
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-18 15:26:12
+-- Dump completed on 2020-10-20 14:15:14
